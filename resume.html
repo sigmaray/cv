@@ -1,0 +1,370 @@
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8"><style>/* Настройки страницы А4 */
+@page {
+    size: A4;
+    margin: 20mm 20mm 20mm 20mm;
+  }
+
+  /* Базовые стили для текста */
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Идеально для ATS */
+    /* font-size: 13px; */
+    /* line-height: 1.5; */
+    color: #2d3748;
+    /* Темно-серый вместо едкого черного */
+    /* margin: 0;
+    padding: 0; */
+  }
+
+  /* Главное имя / Заголовок документа */
+  h1 {
+    font-size: 26px;
+    color: #1a365d;
+    /* Глубокий синий (профессиональный акцент) */
+    margin-top: 0;
+    margin-bottom: 5px;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.5px;
+  }
+
+  /* Стили для подзаголовков (Разделы: Опыт, Навыки и т.д.) */
+  h2 {
+    font-size: 16px;
+    color: #2b6cb0;
+    border-bottom: 1px solid #e2e8f0;
+    /* Элегантная разделительная линия */
+    padding-bottom: 4px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Должности или компании */
+  h3 {
+    /* font-size: 14px; */
+    color: #2d3748;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  /* Обычный текст и абзацы */
+  p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    /* text-align: justify; */
+    /* Делает края аккуратными */
+  }
+
+  /* Ссылки (Контакты, GitHub, LinkedIn) */
+  a {
+    /* color: #3182ce; */
+    color: #0d47a1;
+    /* text-decoration: none; */
+  }
+
+  /* Списки (Обязанности, достижения) */
+  ul {
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    /* Стандартный отступ, чтобы ATS понимала структуру */
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+
+  /* Выделение текста (например, ключевые навыки или даты) */
+  strong {
+    color: #1a202c;
+    font-weight: 600;
+  }
+
+  /* Горизонтальный разделитель, если захочется использовать `---` */
+  hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 16px 0;
+  }
+
+  /* Оптимизация для разрывов страниц (чтобы заголовки не оставались сиротами внизу) */
+  /* h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  ul,
+  p {
+    page-break-inside: avoid;
+  }
+   *//*# sourceURL=style.css*/</style><style>pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #24292e;
+  background: #ffffff
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}/*# sourceURL=/home/foobar/.npm/_npx/55158e48eb5c59f7/node_modules/highlight.js/styles/github.css*/</style></head>
+	<body class="">
+		<h1 id="cv-stanislav-zaleski--senior-full-stack-developer-ruby-on-rails-react">CV: Stanislav Zaleski <br> Senior Full-Stack Developer (Ruby on Rails, React)</h1>
+<p><a href="mailto:sigmaray@gmail.com">sigmaray@gmail.com</a> &nbsp; <a href="https://www.linkedin.com/in/stanislav-z-9a626869">linkedin.com/in/stanislav-z-9a626869</a> &nbsp; <a href="https://github.com/sigmaray">github.com/sigmaray</a> <!--&nbsp; <a href="tel:+375291439214">+375291439214</a>-->
+<br><br>
+<strong>Location:</strong> Remote / Minsk, Belarus &nbsp; <strong>English:</strong> Upper-Intermediate</p>
+<h2 id="professional-summary">Professional Summary</h2>
+<p>Senior Full-Stack Engineer with 15 years of production experience, specializing in Ruby on Rails, PostgreSQL and React-based web applications. Experienced in building and maintaining scalable web platforms, APIs, admin panels, and data-processing systems. Strong focus on clean code, testing, automation, performance optimization, and production stability. Hands-on experience with Docker, Sidekiq, Redis, RabbitMQ, GraphQL, CI/CD, and APM tools.</p>
+<!-- --- -->
+
+<h2 id="technical-skills">Technical Skills</h2>
+<ul>
+<li><strong>Languages:</strong> Ruby, JavaScript (ES6+), TypeScript, CoffeeScript, Go, Python, SQL, Bash</li>
+<li><strong>Frameworks &amp; Libraries:</strong> Ruby on Rails, ActiveAdmin, Redux, Gin, GORM, Flask, Quart, React, Node.js, Express.js, jQuery</li>
+<li><strong>Databases:</strong> PostgreSQL, MySQL, Oracle, MongoDB, Redis</li>
+<li><strong>Message Queues &amp; Background Jobs:</strong> Sidekiq, RabbitMQ, Redis Streams</li>
+<li><strong>Testing:</strong> RSpec, Capybara, Cypress, pytest, Ansible Molecule</li>
+<li><strong>DevOps &amp; Cloud:</strong> Docker, Heroku, Ansible, Capistrano, GitHub Actions</li>
+<li><strong>APIs:</strong> REST, Swagger, GraphQL</li>
+<li><strong>Frontend:</strong> HTML, HAML, Slim, CSS, SCSS, SASS, CSS Modules</li>
+<li><strong>Other Tools:</strong> Makefile, Git, SVN</li>
+</ul>
+<!-- --- -->
+
+<h2 id="work-experience">Work Experience</h2>
+<h3 id="ruby-on-rails-developer--rubyroid-labs">Ruby on Rails Developer | <strong>Rubyroid Labs</strong></h3>
+<p><em>Apr 2025 – Present</em></p>
+<p>Worked on  <a href="https://www.boss-solutions.com/bossdesk">BOSSDesk</a> — an enterprise ITSM and asset management platform (cloud or on-premise) for managing requests, tracking tickets, applying SLAs, assigning tasks, and monitoring resolution performance.</p>
+<ul>
+<li>Migrated email integration from Exchange Web Services to Microsoft Graph API</li>
+<li>Migrated parts of the legacy jQuery-based UI to Turbo/Hotwire</li>
+<li>Implemented new features for ticket and asset management</li>
+<li>Investigated and fixed production issues</li>
+</ul>
+<p>Technologies used: <nobr>• Ruby on Rails</nobr> <nobr>• PostgreSQL</nobr> <nobr>• JavaScript</nobr> <nobr>• Turbo (Hotwire)</nobr> <nobr>• Sidekiq</nobr> <nobr>• Redis</nobr></p>
+<hr>
+<h3 id="backend-engineer-ruby-on-rails-python--telegain">Backend Engineer (Ruby on Rails, Python) | <strong>Telega.in</strong></h3>
+<p><em>May 2024 – Apr 2025</em></p>
+<p>Developed and maintained an analytics platform for tracking and evaluating Telegram advertising campaigns (views, engagement rates, conversion metrics).</p>
+<ul>
+<li>Integrated Redis Streams for efficient data handling</li>
+<li>Optimized PostgreSQL performance by adding indexes and improving slow SQL queries</li>
+<li>Resolved critical production issues, including recurring Sidekiq freezes, PostgreSQL deadlocks, and connection pool exhaustion</li>
+<li>Set up comprehensive CI/CD pipelines in GitLab (Pronto/RuboCop, Minitest, PyTest) to ensure code quality and prevent regressions of existing functionality</li>
+<li>Configured APM (AppSignal, Datadog). Fixed bugs and resolved performance bottlenecks that were detected by APM</li>
+<li>Increased test coverage for mission-critical Ruby and Python components.</li>
+<li>Investigated user-reported issues</li>
+<li>Delivered new features</li>
+</ul>
+<p>Achievements:</p>
+<ul>
+<li>Improved quality of code</li>
+<li>Decreased the amount of issues in production</li>
+<li>Fixed complex bugs that the team could not fix for years</li>
+</ul>
+<p>Technologies used: <nobr>• Ruby on Rails, ActiveAdmin</nobr> <nobr>• PostgreSQL</nobr> <nobr>• JavaScript</nobr> <nobr>• Docker</nobr> <nobr>• Sidekiq</nobr> <nobr>• Redis Streams</nobr> <nobr>• Python, Quart, pytest</nobr></p>
+<hr>
+<h3 id="ruby-on-rails-developer--itransition-group">Ruby on Rails Developer | <strong>Itransition Group</strong></h3>
+<p><em>Sep 2021 – Apr 2023</em></p>
+<p>Worked on the project that helps to segment users with specific criteria and send advertising messages to users from these segments via different channels (email, SMS, push notifications, Facebook private messages).</p>
+<ul>
+<li>Delivered new features<ul>
+<li>New criteria for segmentation</li>
+<li>New export formats</li>
+<li>Integration with other projects using RabbitMQ</li>
+<li>Integration with a third party service with REST API</li>
+</ul>
+</li>
+<li>Fixed complicated bugs in old code</li>
+<li>Reworked Github Actions pipelines</li>
+<li>Investigated issues in staging and production</li>
+<li>Improved UI/UX</li>
+<li>Optimized performance</li>
+</ul>
+<p>Achievements:</p>
+<ul>
+<li>Fixed complex bugs that the team could not fix for years</li>
+</ul>
+<p>Technologies used: <nobr>• Ruby on Rails</nobr> <nobr>• MySQL</nobr> <nobr>• JavaScript</nobr> <nobr>• React</nobr> <nobr>• Redis</nobr> <nobr>• Docker</nobr> <nobr>• Sidekiq</nobr> <nobr>• Memcached</nobr> <nobr>• Amazon S3</nobr> <nobr>• MongoDB</nobr> <nobr>• RabbitMQ</nobr> <nobr>• Redis</nobr></p>
+<hr>
+<h3 id="full-stack-developer-ruby-on-rails-react-jquery--upwork">Full-Stack Developer (Ruby on Rails, React, jQuery) | <strong>Upwork</strong></h3>
+<p><em>Jan 2014 – Sep 2021</em></p>
+<p>Worked on long-term projects (few years in length) both individually and as part of a team:</p>
+<ul>
+<li>Developing new projects from scratch (Ruby, React)</li>
+<li>Added new functionality into existing projects</li>
+<li>Setting up projects on the server (Ubuntu, Capistrano, Unicorn)</li>
+</ul>
+<p>Notable projects:</p>
+<ul>
+<li><a href="https://web.archive.org/web/20250206182153/https://futurevolve.com/">FuturEvolve</a><ul>
+<li>Communicated with the customer, designed architecture, formulated functional requirements</li>
+<li>Refactored existing code, covering core functionality with tests (RSpec/Capybara), fixed bugs</li>
+<li>Developed new modules (database tables, controllers, views)</li>
+<li>Added ElasticSearch</li>
+<li>Set up automated deployment with Capistrano</li>
+<li>Developed REST API and mobile application for Android(Cordova, React, OnsenUI)</li>
+</ul>
+</li>
+<li><a href="https://web.archive.org/web/20241116083213/https://www.ratesnet.com/">RatesNet</a><ul>
+<li>Developed new modules from scratch: creating database tables and GraphQL endpoints</li>
+<li>Created admin panel using ActiveAdmin</li>
+<li>Developed UI with React</li>
+</ul>
+</li>
+</ul>
+<p>Technologies used: <nobr>• Ruby on Rails</nobr> <nobr>• MySQL, PostgreSQL</nobr> <nobr>• React, Redux</nobr> <nobr>• Heroku</nobr> <nobr>• Docker</nobr> <nobr>• JavaScript, CoffeeScript, TypeScript</nobr> <nobr>• Onsen UI, Material UI</nobr> <nobr>• Capistrano</nobr> <nobr>• Elasticsearch</nobr> <nobr>• Active Admin</nobr> <nobr>• GraphQL</nobr></p>
+<hr>
+<h3 id="ruby-on-rails-developer--uxpresso">Ruby on Rails Developer | <strong>UXpresso</strong></h3>
+<p><em>Jul 2012 – Dec 2013</em></p>
+<ul>
+<li>Developed new functionality for Education CRM</li>
+<li>Developed several Active Admin based websites</li>
+</ul>
+<p>Technologies used: <nobr>• Ruby on Rails</nobr> <nobr>• MySQL</nobr> <nobr>• jQuery</nobr> <nobr>• JavaScript</nobr> <nobr>• Solr</nobr> <nobr>• Capistrano</nobr> <nobr>• Active Admin</nobr></p>
+<hr>
+<h3 id="php-developer--light-well-organization">PHP Developer | <strong>Light Well Organization</strong></h3>
+<p><em>Jun 2011 – Jul 2012</em></p>
+<p>Developed <a href="https://www.belinvestbank.by/en/individual/page/internet-banking">internet bank for one of the largest Belarusian banks</a> (enterprise-grade platform providing a comprehensive suite of digital financial services for retail customers):</p>
+<ul>
+<li>Wrote PL/SQL stored procedures</li>
+<li>Designed IFX API requests</li>
+<li>Implemented middle-tier business logic using FScript programming language</li>
+<li>Implemented UI using PHP 5 and jQuery</li>
+<li>Investigated user-reported issues, fixed bugs in old code</li>
+</ul>
+<p>Developed mobile version of internet bank from scratch:</p>
+<ul>
+<li>Designed mobile-friendly UI from scratch</li>
+<li>Implemented UI using PHP and jQuery Mobile</li>
+<li>Performed manual testing on various mobile devices</li>
+</ul>
+<p>Achievements:</p>
+<ul>
+<li>Improved code quality. Rewrote the code in concise and elegant way</li>
+<li>Created a mobile web version of the online banking system, which received excellent user feedback</li>
+</ul>
+<p>Technologies used: <nobr>• PHP 5</nobr> <nobr>• jQuery</nobr> <nobr>• Oracle</nobr> <nobr>• JavaScript</nobr> <nobr>• FScript</nobr></p>
+<hr>
+<h3 id="php-developer--softconveyer">PHP Developer | <strong>SoftConveyer</strong></h3>
+<p><em>May 2010 – Dec 2010</em></p>
+<ul>
+<li>Developed websites using Joomla CMS</li>
+<li>Developed intranet website for Belarusian mobile operator using Symfony framework</li>
+</ul>
+<p>Technologies used: <nobr>• PHP 5</nobr> <nobr>• MySQL</nobr> <nobr>• jQuery</nobr> <nobr>• JavaScript</nobr> <nobr>• Joomla!</nobr> <nobr>• Symfony</nobr></p>
+
+	
+
+</body></html>
